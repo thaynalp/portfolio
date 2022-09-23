@@ -1,0 +1,271 @@
+body {
+    margin: 0;
+    background-color: rgba(243, 99, 142, 0.425);
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(32, 30, 30, 0.842);
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block; 
+    color: aliceblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*mudar a cor do link, qundo passar o mouse por cima*/
+
+li a:hover {
+   background-color: rgb(172, 44, 144); 
+} 
+
+.active{
+    background-color: rgb(172, 44, 144);
+}
+
+@media screen and (max-width: 600px) {
+    li {float:none;}
+}
+
+
+#bodyindex {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#imgjorel{
+  height: 450px;
+  margin-left: 50px;
+  
+}
+
+
+
+#tituloformulario {
+    font-family: sans-serif;
+    color:#313133;
+    margin-left: 7%;
+    width: 400px;
+    
+    
+  }
+
+  fieldset{
+    border: 0px;
+  }
+
+  #formulario {
+    width: 30px;
+    font-family: sans-serif;
+    font-size: 18px;
+    color:rgb(172, 44, 144);
+    margin: 40%;
+    margin-top: 10%;
+    justify-content: center;
+  }
+
+  input,select, textarea, bt {
+    border-radius: 10px;
+  }
+
+  .campo {
+    margin-bottom: 20px;
+  }
+
+  .h1hobbies{
+    text-align: center;
+    margin-top: 0;
+    font-size: medium;
+    
+  }
+
+  #fotothayna{
+    height: 300px;
+    width: 1050px;
+    margin-top: 102px;
+    margin-left: 45px;
+    margin-right: 50px;
+    padding-right: 120px;
+    border-radius: 30%;
+
+  }
+
+.container1 {
+  display: flex;
+  color: white;
+  background-color: #9e344d79;
+  margin-top: 4%;
+  margin-left: 0%;
+  margin-right: 9%;
+  margin-bottom: 5%;
+  border-top: 0;
+  padding-bottom:1%;
+  padding-left: -1%;
+  border-left: 50%;
+ }
+
+ .container2 {
+  display: flex;
+  color: white;
+  background-color: #9e344d79;
+  margin-top: 4%;
+  margin-left: 26%;
+  margin-right: 19%;
+  margin-bottom: 5%;
+  border-top: 0;
+  padding-bottom:1%;
+  padding-left: -1%;
+  border-left: 50%;
+ }
+.artigo1 {
+  padding-left: 20px;
+  margin-right: 50px;
+}
+
+.artigo2 {
+  height: 30px;
+  padding-left: 0px;
+  margin-right: 100px;
+
+}
+
+.artigo3 {
+  padding-left: 0px;
+  margin-right: 100px;
+}
+  
+.tituloestudo {
+  font-family: sans-serif;
+  font-size:xx-large;
+  width: 400px;
+}
+
+.h2titulo {
+  text-align: center;
+  font-size: x-large;
+}
+
+.lista {
+  margin-right: 104px;
+  width: 100%;
+  font-size: 18px;
+
+}
+
+.listaitem {
+  height: 30px;
+  width: 250px;
+  
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-left: 30px;
+  padding-bottom: 2px;
+  text-align: left;
+  }
+
+#imgbateria {
+  height: 250px;
+  width: 230px;
+}
+
+#imgfutevolei{
+  height: 30px;
+  width: 50px;
+ 
+}
+
+
+.button {
+    min-width: 300px;
+    min-height: 60px;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #1b1b1b;
+    background: #b34ecc;
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+    }
+  
+  button::before {
+    content: '';
+    border-radius: 1000px;
+    min-width: calc(300px + 12px);
+    min-height: calc(60px + 12px);
+    border: 6px solid #dd58d6;
+    box-shadow: 0 0 60px rgba(199, 81, 169, 0.64);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease-in-out 0s;
+  }
+  
+  .button:hover, .button:focus {
+    color: #313133;
+    transform: translateY(-6px);
+  }
+  
+  button:hover::before, button:focus::before {
+    opacity: 1;
+  }
+  
+  button::after {
+    content: '';
+    width: 30px; height: 30px;
+    border-radius: 100%;
+    border: 6px solid #7c5abb;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: ring 1.5s infinite;
+  }
+  
+  button:hover::after, button:focus::after {
+    animation: none;
+    display: none;
+  }
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+  }
+
+
+
+
